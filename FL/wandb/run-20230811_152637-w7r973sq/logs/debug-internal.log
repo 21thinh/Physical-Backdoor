@@ -1,0 +1,271 @@
+2023-08-11 15:26:37,619 INFO    StreamThr :863381 [internal.py:wandb_internal():86] W&B internal server running at pid: 863381, started at: 2023-08-11 15:26:37.618777
+2023-08-11 15:26:37,621 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status
+2023-08-11 15:26:37,622 INFO    WriterThread:863381 [datastore.py:open_for_write():85] open: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/run-w7r973sq.wandb
+2023-08-11 15:26:37,623 DEBUG   SenderThread:863381 [sender.py:send():375] send: header
+2023-08-11 15:26:37,623 DEBUG   SenderThread:863381 [sender.py:send():375] send: run
+2023-08-11 15:26:38,282 INFO    SenderThread:863381 [dir_watcher.py:__init__():219] watching files in: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files
+2023-08-11 15:26:38,283 INFO    SenderThread:863381 [sender.py:_start_run_threads():1124] run started: w7r973sq with start time 1691767597.618057
+2023-08-11 15:26:38,283 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: check_version
+2023-08-11 15:26:38,284 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: summary_record
+2023-08-11 15:26:38,284 INFO    SenderThread:863381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-08-11 15:26:38,284 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: check_version
+2023-08-11 15:26:38,616 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: run_start
+2023-08-11 15:26:38,625 DEBUG   HandlerThread:863381 [system_info.py:__init__():31] System info init
+2023-08-11 15:26:38,625 DEBUG   HandlerThread:863381 [system_info.py:__init__():46] System info init done
+2023-08-11 15:26:38,625 INFO    HandlerThread:863381 [system_monitor.py:start():181] Starting system monitor
+2023-08-11 15:26:38,625 INFO    SystemMonitor:863381 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-08-11 15:26:38,625 INFO    HandlerThread:863381 [system_monitor.py:probe():201] Collecting system info
+2023-08-11 15:26:38,626 INFO    SystemMonitor:863381 [interfaces.py:start():190] Started cpu monitoring
+2023-08-11 15:26:38,626 INFO    SystemMonitor:863381 [interfaces.py:start():190] Started disk monitoring
+2023-08-11 15:26:38,639 INFO    SystemMonitor:863381 [interfaces.py:start():190] Started gpu monitoring
+2023-08-11 15:26:38,642 INFO    SystemMonitor:863381 [interfaces.py:start():190] Started memory monitoring
+2023-08-11 15:26:38,659 INFO    SystemMonitor:863381 [interfaces.py:start():190] Started network monitoring
+2023-08-11 15:26:38,698 DEBUG   HandlerThread:863381 [system_info.py:probe():195] Probing system
+2023-08-11 15:26:38,711 DEBUG   HandlerThread:863381 [git.py:repo():40] git repository is invalid
+2023-08-11 15:26:38,712 DEBUG   HandlerThread:863381 [system_info.py:probe():240] Probing system done
+2023-08-11 15:26:38,712 DEBUG   HandlerThread:863381 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-60-generic-x86_64-with-glibc2.10', 'python': '3.8.16', 'heartbeatAt': '2023-08-11T15:26:38.698523', 'startedAt': '2023-08-11T15:26:37.609933', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/run.py', 'codePath': 'run.py', 'host': 'slurmjupyter', 'username': 'admin', 'executable': '/home/admin/miniconda3/envs/21thinh.dd/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 3415.2616718750005, 'min': 1200.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 3449.845, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.999, 'min': 1200.0, 'max': 3900.0}, {'current': 3311.339, 'min': 1200.0, 'max': 3900.0}, {'current': 2500.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3470.747, 'min': 1200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3439.135, 'min': 1200.0, 'max': 3900.0}, {'current': 3473.402, 'min': 1200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3482.494, 'min': 1200.0, 'max': 3900.0}, {'current': 3483.902, 'min': 1200.0, 'max': 3900.0}, {'current': 3483.434, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.996, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3497.719, 'min': 1200.0, 'max': 3900.0}, {'current': 3437.229, 'min': 1200.0, 'max': 3900.0}, {'current': 3466.094, 'min': 1200.0, 'max': 3900.0}, {'current': 3360.757, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.001, 'min': 1200.0, 'max': 3900.0}, {'current': 3412.305, 'min': 1200.0, 'max': 3900.0}, {'current': 3434.086, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.999, 'min': 1200.0, 'max': 3900.0}, {'current': 3436.044, 'min': 1200.0, 'max': 3900.0}, {'current': 3437.749, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.996, 'min': 1200.0, 'max': 3900.0}, {'current': 3438.472, 'min': 1200.0, 'max': 3900.0}, {'current': 3429.157, 'min': 1200.0, 'max': 3900.0}, {'current': 3437.374, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.999, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.998, 'min': 1200.0, 'max': 3900.0}, {'current': 3445.476, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.001, 'min': 1200.0, 'max': 3900.0}, {'current': 3294.646, 'min': 1200.0, 'max': 3900.0}, {'current': 2500.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.001, 'min': 1200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.004, 'min': 1200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.996, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.001, 'min': 1200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3431.696, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.999, 'min': 1200.0, 'max': 3900.0}, {'current': 3360.082, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.003, 'min': 1200.0, 'max': 3900.0}, {'current': 3415.829, 'min': 1200.0, 'max': 3900.0}, {'current': 3436.93, 'min': 1200.0, 'max': 3900.0}, {'current': 3485.317, 'min': 1200.0, 'max': 3900.0}, {'current': 3439.06, 'min': 1200.0, 'max': 3900.0}, {'current': 3440.745, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.999, 'min': 1200.0, 'max': 3900.0}, {'current': 3441.727, 'min': 1200.0, 'max': 3900.0}, {'current': 3438.843, 'min': 1200.0, 'max': 3900.0}, {'current': 3440.955, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.999, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.002, 'min': 1200.0, 'max': 3900.0}], 'disk': {'total': 4430.82975769043, 'used': 1597.2919578552246}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 754.5681610107422}}
+2023-08-11 15:26:38,712 INFO    HandlerThread:863381 [system_monitor.py:probe():211] Finished collecting system info
+2023-08-11 15:26:38,712 INFO    HandlerThread:863381 [system_monitor.py:probe():214] Publishing system info
+2023-08-11 15:26:38,712 DEBUG   HandlerThread:863381 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-08-11 15:26:38,713 DEBUG   HandlerThread:863381 [system_info.py:_save_pip():67] Saving pip packages done
+2023-08-11 15:26:38,713 DEBUG   HandlerThread:863381 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-08-11 15:26:39,285 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_created():278] file/dir created: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/requirements.txt
+2023-08-11 15:26:39,285 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_created():278] file/dir created: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/conda-environment.yaml
+2023-08-11 15:26:39,285 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_created():278] file/dir created: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/wandb-summary.json
+2023-08-11 15:26:45,778 DEBUG   HandlerThread:863381 [system_info.py:_save_conda():86] Saving conda packages done
+2023-08-11 15:26:45,779 INFO    HandlerThread:863381 [system_monitor.py:probe():216] Finished publishing system info
+2023-08-11 15:26:45,785 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:26:45,791 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: keepalive
+2023-08-11 15:26:45,792 DEBUG   SenderThread:863381 [sender.py:send():375] send: files
+2023-08-11 15:26:45,792 INFO    SenderThread:863381 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-08-11 15:26:45,796 DEBUG   SenderThread:863381 [sender.py:send():375] send: telemetry
+2023-08-11 15:26:45,799 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-11 15:26:45,800 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: stop_status
+2023-08-11 15:26:46,287 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/conda-environment.yaml
+2023-08-11 15:26:46,288 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_created():278] file/dir created: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:26:46,288 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_created():278] file/dir created: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/wandb-metadata.json
+2023-08-11 15:26:47,156 INFO    wandb-upload_0:863381 [upload_job.py:push():137] Uploaded file /tmp/tmp3wr9tahqwandb/p5fcxrdp-wandb-metadata.json
+2023-08-11 15:26:48,288 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:26:48,898 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:26:50,289 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:26:54,029 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:26:54,290 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:26:56,291 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:26:59,444 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:00,301 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:00,792 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-11 15:27:00,793 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: stop_status
+2023-08-11 15:27:04,303 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:04,807 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:06,307 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:08,316 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:09,908 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:10,317 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:10,317 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/config.yaml
+2023-08-11 15:27:12,323 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:14,325 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:15,534 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:15,796 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-11 15:27:15,797 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: stop_status
+2023-08-11 15:27:16,330 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:18,331 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:20,332 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:20,739 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:22,344 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:24,347 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:25,774 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:26,354 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:28,352 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:30,355 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:30,800 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-11 15:27:30,800 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: stop_status
+2023-08-11 15:27:31,110 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:32,356 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:34,358 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:36,161 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:36,359 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:38,367 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:38,662 DEBUG   SystemMonitor:863381 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-08-11 15:27:38,666 DEBUG   SenderThread:863381 [sender.py:send():375] send: stats
+2023-08-11 15:27:40,098 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: partial_history
+2023-08-11 15:27:40,375 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:42,102 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:42,385 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:27:47,103 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:52,135 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:27:57,623 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:02,650 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:07,811 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-11 15:28:07,818 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: stop_status
+2023-08-11 15:28:10,449 DEBUG   SenderThread:863381 [sender.py:send():375] send: stats
+2023-08-11 15:28:10,456 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:11,010 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-11 15:28:11,034 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: stop_status
+2023-08-11 15:28:16,373 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:21,378 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:27,249 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:32,258 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:37,263 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:38,675 DEBUG   SenderThread:863381 [sender.py:send():375] send: stats
+2023-08-11 15:28:42,543 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-11 15:28:42,543 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: stop_status
+2023-08-11 15:28:44,199 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:49,214 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:52,086 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: keepalive
+2023-08-11 15:28:52,552 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:28:54,475 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:28:54,554 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:28:57,524 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-11 15:28:57,525 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: stop_status
+2023-08-11 15:28:58,579 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:29:00,014 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:29:02,587 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:29:04,610 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:29:05,891 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:29:07,656 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-11 15:29:07,657 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: stop_status
+2023-08-11 15:29:08,675 DEBUG   SenderThread:863381 [sender.py:send():375] send: stats
+2023-08-11 15:29:11,247 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:29:12,619 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:29:16,528 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:29:21,545 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:29:22,332 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-11 15:29:22,333 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: stop_status
+2023-08-11 15:29:26,667 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:29:26,769 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:29:31,708 DEBUG   SenderThread:863381 [sender.py:send():375] send: exit
+2023-08-11 15:29:31,708 INFO    SenderThread:863381 [sender.py:send_exit():598] handling exit code: 255
+2023-08-11 15:29:31,709 INFO    SenderThread:863381 [sender.py:send_exit():600] handling runtime: 173
+2023-08-11 15:29:31,709 INFO    SenderThread:863381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-08-11 15:29:31,709 INFO    SenderThread:863381 [sender.py:send_exit():606] send defer
+2023-08-11 15:29:31,710 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:31,710 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 0
+2023-08-11 15:29:31,710 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:31,710 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-08-11 15:29:31,710 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 1
+2023-08-11 15:29:31,711 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:31,711 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 1
+2023-08-11 15:29:31,711 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:31,711 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-08-11 15:29:31,711 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 2
+2023-08-11 15:29:31,711 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:31,711 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 2
+2023-08-11 15:29:31,711 INFO    HandlerThread:863381 [system_monitor.py:finish():190] Stopping system monitor
+2023-08-11 15:29:31,712 INFO    HandlerThread:863381 [interfaces.py:finish():202] Joined cpu monitor
+2023-08-11 15:29:31,712 INFO    HandlerThread:863381 [interfaces.py:finish():202] Joined disk monitor
+2023-08-11 15:29:31,712 DEBUG   SystemMonitor:863381 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-08-11 15:29:31,712 DEBUG   SystemMonitor:863381 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-08-11 15:29:31,948 INFO    HandlerThread:863381 [interfaces.py:finish():202] Joined gpu monitor
+2023-08-11 15:29:31,949 INFO    HandlerThread:863381 [interfaces.py:finish():202] Joined memory monitor
+2023-08-11 15:29:31,949 INFO    HandlerThread:863381 [interfaces.py:finish():202] Joined network monitor
+2023-08-11 15:29:31,950 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:31,950 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-08-11 15:29:31,950 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 3
+2023-08-11 15:29:31,956 DEBUG   SenderThread:863381 [sender.py:send():375] send: stats
+2023-08-11 15:29:31,957 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:31,957 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 3
+2023-08-11 15:29:31,958 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:29:31,958 DEBUG   SenderThread:863381 [sender.py:send():375] send: history
+2023-08-11 15:29:31,959 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: summary_record
+2023-08-11 15:29:31,960 INFO    SenderThread:863381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-08-11 15:29:31,960 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:31,960 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-08-11 15:29:31,960 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 4
+2023-08-11 15:29:31,960 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:31,961 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 4
+2023-08-11 15:29:31,961 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:31,961 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-08-11 15:29:31,961 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 5
+2023-08-11 15:29:31,961 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:31,961 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 5
+2023-08-11 15:29:31,965 DEBUG   SenderThread:863381 [sender.py:send():375] send: summary
+2023-08-11 15:29:31,967 INFO    SenderThread:863381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-08-11 15:29:31,968 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:31,968 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-08-11 15:29:31,968 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 6
+2023-08-11 15:29:31,968 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:31,968 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 6
+2023-08-11 15:29:31,968 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:31,968 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-08-11 15:29:31,969 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 7
+2023-08-11 15:29:31,969 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:29:31,969 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:31,969 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 7
+2023-08-11 15:29:31,969 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:31,969 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-08-11 15:29:32,678 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/wandb-summary.json
+2023-08-11 15:29:32,678 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:29:32,706 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-11 15:29:34,207 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 8
+2023-08-11 15:29:34,208 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: poll_exit
+2023-08-11 15:29:34,208 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:34,208 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 8
+2023-08-11 15:29:34,208 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:34,209 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-08-11 15:29:34,209 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 9
+2023-08-11 15:29:34,209 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:34,209 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 9
+2023-08-11 15:29:34,209 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:34,209 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-08-11 15:29:34,209 INFO    SenderThread:863381 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-08-11 15:29:34,680 INFO    Thread-12 :863381 [dir_watcher.py:_on_file_modified():295] file/dir modified: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:29:34,681 INFO    SenderThread:863381 [dir_watcher.py:finish():395] scan: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files
+2023-08-11 15:29:34,681 INFO    SenderThread:863381 [dir_watcher.py:finish():409] scan save: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/wandb-metadata.json wandb-metadata.json
+2023-08-11 15:29:34,681 INFO    SenderThread:863381 [dir_watcher.py:finish():409] scan save: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/wandb-summary.json wandb-summary.json
+2023-08-11 15:29:34,681 INFO    SenderThread:863381 [dir_watcher.py:finish():409] scan save: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/requirements.txt requirements.txt
+2023-08-11 15:29:34,681 INFO    SenderThread:863381 [dir_watcher.py:finish():409] scan save: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/conda-environment.yaml conda-environment.yaml
+2023-08-11 15:29:34,681 INFO    SenderThread:863381 [dir_watcher.py:finish():409] scan save: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/config.yaml config.yaml
+2023-08-11 15:29:34,681 INFO    SenderThread:863381 [dir_watcher.py:finish():409] scan save: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log output.log
+2023-08-11 15:29:34,681 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 10
+2023-08-11 15:29:34,682 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:34,682 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 10
+2023-08-11 15:29:34,699 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:34,699 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-08-11 15:29:34,699 INFO    SenderThread:863381 [file_pusher.py:finish():168] shutting down file pusher
+2023-08-11 15:29:34,962 ERROR   wandb-upload_0:863381 [internal_api.py:upload_file():2099] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/ducthinh19102003/federated-learning%20experiment/w7r973sq/wandb-summary.json?Expires=1691854217&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=c6ffMC%2BDw9s2VTAajvwE4uK6m7ygVml4PJcKAORjozYgBKdsmd%2BOEqQ3Vrn53UMA8%2BRGbnywkhm7Go4m%2BxrVnFl9FiR3vcPpy6e6Yd75xDH68hpMJu1ZZHJ2BdCybW2POvQrb8Us26g0ASlfZmpl0ZoIfYeNrAip41b7%2B1UU%2BTgbCaCuAd1xc%2Bm5T04K1EzrOcI0vPp3rrLhMnsipumH2fFXxR539RTo39c%2FUO0C6%2BPp4P6iot4vtem6hhgytaHlWzYGk3hGP0VZgD9GAQlzxJpGI0UJGKs2xqTq3vznZmrpYPZubY0I2PYo3Hf4kp1IbRpdm7%2B5RZDph0B1pOb0VA%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-08-11 15:29:34,962 ERROR   wandb-upload_0:863381 [internal_api.py:upload_file():2101] upload_file request headers: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '161'}
+2023-08-11 15:29:34,962 ERROR   wandb-upload_0:863381 [internal_api.py:upload_file():2103] upload_file response body: 
+2023-08-11 15:29:35,647 INFO    wandb-upload_4:863381 [upload_job.py:push():137] Uploaded file /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/output.log
+2023-08-11 15:29:36,196 INFO    wandb-upload_1:863381 [upload_job.py:push():137] Uploaded file /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/requirements.txt
+2023-08-11 15:29:36,504 INFO    wandb-upload_0:863381 [upload_job.py:push():137] Uploaded file /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/wandb-summary.json
+2023-08-11 15:29:36,507 INFO    wandb-upload_2:863381 [upload_job.py:push():137] Uploaded file /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/conda-environment.yaml
+2023-08-11 15:29:36,578 INFO    wandb-upload_3:863381 [upload_job.py:push():137] Uploaded file /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/files/config.yaml
+2023-08-11 15:29:36,778 INFO    Thread-11 :863381 [sender.py:transition_state():626] send defer: 11
+2023-08-11 15:29:36,779 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:36,779 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 11
+2023-08-11 15:29:36,780 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:36,780 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-08-11 15:29:36,780 INFO    SenderThread:863381 [file_pusher.py:join():173] waiting for file pusher
+2023-08-11 15:29:36,780 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 12
+2023-08-11 15:29:36,780 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:36,780 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 12
+2023-08-11 15:29:36,780 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:36,780 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-08-11 15:29:37,061 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 13
+2023-08-11 15:29:37,062 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:37,062 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 13
+2023-08-11 15:29:37,062 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: status_report
+2023-08-11 15:29:37,062 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:37,062 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-08-11 15:29:37,062 INFO    SenderThread:863381 [sender.py:transition_state():626] send defer: 14
+2023-08-11 15:29:37,062 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: defer
+2023-08-11 15:29:37,062 INFO    HandlerThread:863381 [handler.py:handle_request_defer():170] handle defer: 14
+2023-08-11 15:29:37,063 DEBUG   SenderThread:863381 [sender.py:send():375] send: final
+2023-08-11 15:29:37,063 DEBUG   SenderThread:863381 [sender.py:send():375] send: footer
+2023-08-11 15:29:37,063 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: defer
+2023-08-11 15:29:37,063 INFO    SenderThread:863381 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-08-11 15:29:37,064 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-11 15:29:37,064 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: server_info
+2023-08-11 15:29:37,064 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: get_summary
+2023-08-11 15:29:37,064 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: sampled_history
+2023-08-11 15:29:37,065 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: poll_exit
+2023-08-11 15:29:37,065 DEBUG   SenderThread:863381 [sender.py:send_request():402] send_request: server_info
+2023-08-11 15:29:37,502 INFO    MainThread:863381 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2023-08-11 15:29:37,503 INFO    MainThread:863381 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2023-08-11 15:29:37,503 INFO    MainThread:863381 [wandb_run.py:_footer_sync_info():3434] logging synced files
+2023-08-11 15:29:37,504 DEBUG   HandlerThread:863381 [handler.py:handle_request():144] handle_request: shutdown
+2023-08-11 15:29:37,504 INFO    HandlerThread:863381 [handler.py:finish():845] shutting down handler
+2023-08-11 15:29:38,065 INFO    WriterThread:863381 [datastore.py:close():298] close: /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_152637-w7r973sq/run-w7r973sq.wandb
+2023-08-11 15:29:38,507 INFO    SenderThread:863381 [sender.py:finish():1550] shutting down sender
+2023-08-11 15:29:38,507 INFO    SenderThread:863381 [file_pusher.py:finish():168] shutting down file pusher
+2023-08-11 15:29:38,507 INFO    SenderThread:863381 [file_pusher.py:join():173] waiting for file pusher
