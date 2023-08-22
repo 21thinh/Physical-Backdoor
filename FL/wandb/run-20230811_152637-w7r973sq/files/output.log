@@ -1,0 +1,154 @@
+Files already downloaded and verified
+Files already downloaded and verified
+INFO flwr 2023-08-11 15:26:47,887 | app.py:146 | Starting Flower simulation, config: ServerConfig(num_rounds=20, round_timeout=None)
+2023-08-11 15:26:52,027	INFO worker.py:1621 -- Started a local Ray instance.
+INFO flwr 2023-08-11 15:26:55,163 | app.py:180 | Flower VCE: Ray initialized with resources: {'CPU': 64.0, 'memory': 635013954150.0, 'object_store_memory': 65279852953.0, 'node:__internal_head__': 1.0, 'node:172.22.0.3': 1.0, 'GPU': 1.0, 'accelerator_type:G': 1.0}
+INFO flwr 2023-08-11 15:26:55,164 | server.py:86 | Initializing global parameters
+INFO flwr 2023-08-11 15:26:55,164 | server.py:269 | Using initial parameters provided by strategy
+INFO flwr 2023-08-11 15:26:55,164 | server.py:88 | Evaluating initial parameters
+Start Server Testing
+--------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████| 1563/1563 [00:41<00:00, 37.52it/s]
+INFO flwr 2023-08-11 15:27:40,098 | server.py:91 | initial parameters (loss, other metrics): 0.07206334228992463, {'accuracy': 0.1}
+INFO flwr 2023-08-11 15:27:40,098 | server.py:101 | FL starting
+DEBUG flwr 2023-08-11 15:27:40,099 | server.py:218 | fit_round 1: strategy sampled 32 clients (out of 64)
+Server-side evaluation loss 0.07206334228992463 / accuracy 0.1
+test     - loss:0.0721, accuracy:0.1000
+Finish Server Testing
+--------------------
+[36m(launch_and_fit pid=888287)[39m [Client 29] fit, config: {'server_round': 1, 'local_epochs': 30}
+[36m(launch_and_fit pid=888287)[39m /home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:139: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[36m(launch_and_fit pid=888287)[39m   warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+ERROR flwr 2023-08-11 15:28:52,402 | ray_client_proxy.py:87 | [36mray::launch_and_fit()[39m (pid=888287, ip=172.22.0.3)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 28, in fit
+    train(self.net, self.trainloader, epochs=self.num_epochs)
+AttributeError: 'FlowerNumPyClient' object has no attribute 'num_epochs'
+[36m(launch_and_fit pid=890154)[39m [Client 3] fit, config: {'server_round': 1, 'local_epochs': 30}
+[36m(launch_and_fit pid=890154)[39m /home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:139: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rateERROR flwr 2023-08-11 15:29:01,655 | ray_client_proxy.py:87 | [36mray::launch_and_fit()[39m (pid=890154, ip=172.22.0.3)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 28, in fit
+    train(self.net, self.trainloader, epochs=self.num_epochs)
+AttributeError: 'FlowerNumPyClient' object has no attribute 'num_epochs'
+[36m(launch_and_fit pid=890154)[39m   warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+ERROR flwr 2023-08-11 15:29:10,235 | ray_client_proxy.py:87 | [36mray::launch_and_fit()[39m (pid=892330, ip=172.22.0.3)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 28, in fit
+    train(self.net, self.trainloader, epochs=self.num_epochs)
+AttributeError: 'FlowerNumPyClient' object has no attribute 'num_epochs'
+[36m(launch_and_fit pid=892330)[39m /home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:139: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[36m(launch_and_fit pid=892330)[39m   warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+[36m(launch_and_fit pid=892330)[39m [Client 32] fit, config: {'server_round': 1, 'local_epochs': 30}
+ERROR flwr 2023-08-11 15:29:24,697 | ray_client_proxy.py:87 | [36mray::launch_and_fit()[39m (pid=895315, ip=172.22.0.3)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 28, in fit
+    train(self.net, self.trainloader, epochs=self.num_epochs)
+AttributeError: 'FlowerNumPyClient' object has no attribute 'num_epochs'
+[36m(launch_and_fit pid=895315)[39m /home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:139: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[36m(launch_and_fit pid=895315)[39m   warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+[36m(launch_and_fit pid=895315)[39m [Client 36] fit, config: {'server_round': 1, 'local_epochs': 30}
+Traceback (most recent call last):
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 334, in fit_clients
+    finished_fs, _ = concurrent.futures.wait(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/_base.py", line 305, in wait
+    waiter.event.wait(timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/run.py", line 87, in <module>
+    fl.simulation.start_simulation(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/simulation/app.py", line 197, in start_simulation
+    hist = _fl(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/app.py", line 217, in _fl
+    hist = server.fit(num_rounds=config.num_rounds, timeout=config.round_timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 106, in fit
+    res_fit = self.fit_round(server_round=current_round, timeout=timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 227, in fit_round
+    results, failures = fit_clients(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 334, in fit_clients
+    finished_fs, _ = concurrent.futures.wait(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/_base.py", line 644, in __exit__
+    self.shutdown(wait=True)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/thread.py", line 236, in shutdown
+    t.join()
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 1011, in join
+    self._wait_for_tstate_lock()
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 334, in fit_clients
+    finished_fs, _ = concurrent.futures.wait(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/_base.py", line 305, in wait
+    waiter.event.wait(timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/run.py", line 87, in <module>
+    fl.simulation.start_simulation(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/simulation/app.py", line 197, in start_simulation
+    hist = _fl(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/app.py", line 217, in _fl
+    hist = server.fit(num_rounds=config.num_rounds, timeout=config.round_timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 106, in fit
+    res_fit = self.fit_round(server_round=current_round, timeout=timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 227, in fit_round
+    results, failures = fit_clients(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 334, in fit_clients
+    finished_fs, _ = concurrent.futures.wait(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/_base.py", line 644, in __exit__
+    self.shutdown(wait=True)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/thread.py", line 236, in shutdown
+    t.join()
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 1011, in join
+    self._wait_for_tstate_lock()
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt

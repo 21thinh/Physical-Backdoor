@@ -1,0 +1,41 @@
+wandb_version: 1
+
+num_clients:
+  desc: null
+  value: 64
+num_rounds:
+  desc: null
+  value: 20
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.16
+    cli_version: 0.15.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    start_time: 1691767314.797178
+    t:
+      1:
+      - 1
+      - 2
+      - 3
+      - 30
+      - 41
+      - 55
+      2:
+      - 1
+      - 2
+      - 3
+      - 30
+      - 41
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.8.16
+      5: 0.15.0
+      8:
+      - 2
+      - 5

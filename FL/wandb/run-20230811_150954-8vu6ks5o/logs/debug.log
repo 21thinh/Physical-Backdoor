@@ -1,0 +1,26 @@
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_setup.py:_flush():76] Configure stats pid to 678052
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_setup.py:_flush():76] Loading settings from /home/admin/.config/wandb/settings
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_setup.py:_flush():76] Loading settings from /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/settings
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program': '/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/run.py'}
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_init.py:_log_setup():507] Logging user logs to /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_150954-8vu6ks5o/logs/debug.log
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_init.py:_log_setup():508] Logging internal logs to /vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/wandb/run-20230811_150954-8vu6ks5o/logs/debug-internal.log
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_init.py:init():547] calling init triggers
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-08-11 15:09:54,896 INFO    MainThread:678052 [wandb_init.py:init():595] starting backend
+2023-08-11 15:09:54,897 INFO    MainThread:678052 [wandb_init.py:init():599] setting up manager
+2023-08-11 15:09:54,905 INFO    MainThread:678052 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-08-11 15:09:54,918 INFO    MainThread:678052 [wandb_init.py:init():605] backend started and connected
+2023-08-11 15:09:54,935 INFO    MainThread:678052 [wandb_init.py:init():695] updated telemetry
+2023-08-11 15:09:54,936 INFO    MainThread:678052 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2023-08-11 15:09:55,581 ERROR   MainThread:678052 [wandb_init.py:init():758] encountered error: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2023-08-11 15:09:55,983 ERROR   MainThread:678052 [wandb_init.py:init():1163] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+Traceback (most recent call last):
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1145, in init
+    run = wi.init()
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 764, in init
+    raise error
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2023-08-11 15:09:56,989 WARNING MsgRouterThr:678052 [router.py:message_loop():77] message_loop has been closed

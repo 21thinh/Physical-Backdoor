@@ -1,0 +1,160 @@
+Files already downloaded and verified
+Files already downloaded and verified
+INFO flwr 2023-08-11 15:22:06,055 | app.py:146 | Starting Flower simulation, config: ServerConfig(num_rounds=20, round_timeout=None)
+2023-08-11 15:22:09,797	INFO worker.py:1621 -- Started a local Ray instance.
+INFO flwr 2023-08-11 15:22:12,844 | app.py:180 | Flower VCE: Ray initialized with resources: {'CPU': 64.0, 'accelerator_type:G': 1.0, 'GPU': 1.0, 'node:172.22.0.3': 1.0, 'node:__internal_head__': 1.0, 'memory': 635650804326.0, 'object_store_memory': 65279852953.0}
+INFO flwr 2023-08-11 15:22:12,845 | server.py:86 | Initializing global parameters
+INFO flwr 2023-08-11 15:22:12,845 | server.py:269 | Using initial parameters provided by strategy
+INFO flwr 2023-08-11 15:22:12,846 | server.py:88 | Evaluating initial parameters
+Start Server Testing
+--------------------
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████| 1563/1563 [00:23<00:00, 65.94it/s]
+INFO flwr 2023-08-11 15:22:41,654 | server.py:91 | initial parameters (loss, other metrics): 0.07203049695491791, {'accuracy': 0.09962}
+INFO flwr 2023-08-11 15:22:41,655 | server.py:101 | FL starting
+DEBUG flwr 2023-08-11 15:22:41,655 | server.py:218 | fit_round 1: strategy sampled 32 clients (out of 64)
+Server-side evaluation loss 0.07203049695491791 / accuracy 0.09962
+test     - loss:0.0720, accuracy:0.0996
+Finish Server Testing
+--------------------
+ERROR flwr 2023-08-11 15:23:56,828 | ray_client_proxy.py:87 | [36mray::launch_and_fit()[39m (pid=829876, ip=172.22.0.3)
+  At least one of the input arguments for this task could not be computed:
+ray.exceptions.RaySystemError: System error: No module named 'libs'
+traceback: Traceback (most recent call last):
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 1, in <module>
+    from libs import *
+ModuleNotFoundError: No module named 'libs'
+[36m(launch_and_fit pid=829876)[39m No module named 'libs'
+[36m(launch_and_fit pid=829876)[39m Traceback (most recent call last):
+[36m(launch_and_fit pid=829876)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 387, in deserialize_objects
+[36m(launch_and_fit pid=829876)[39m     obj = self._deserialize_object(data, metadata, object_ref)
+[36m(launch_and_fit pid=829876)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 268, in _deserialize_object
+[36m(launch_and_fit pid=829876)[39m     return self._deserialize_msgpack_data(data, metadata_fields)
+[36m(launch_and_fit pid=829876)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 223, in _deserialize_msgpack_data
+[36m(launch_and_fit pid=829876)[39m     python_objects = self._deserialize_pickle5_data(pickle5_data)
+[36m(launch_and_fit pid=829876)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 213, in _deserialize_pickle5_data
+[36m(launch_and_fit pid=829876)[39m     obj = pickle.loads(in_band)
+[36m(launch_and_fit pid=829876)[39m   File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 1, in <module>
+[36m(launch_and_fit pid=829876)[39m     from libs import *
+[36m(launch_and_fit pid=829876)[39m ModuleNotFoundError: No module named 'libs'
+ERROR flwr 2023-08-11 15:24:01,393 | ray_client_proxy.py:87 | [36mray::launch_and_fit()[39m (pid=830768, ip=172.22.0.3)
+  At least one of the input arguments for this task could not be computed:
+ray.exceptions.RaySystemError: System error: No module named 'libs'
+traceback: Traceback (most recent call last):
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 1, in <module>
+    from libs import *
+ModuleNotFoundError: No module named 'libs'
+ERROR flwr 2023-08-11 15:24:07,074 | ray_client_proxy.py:87 | [36mray::launch_and_fit()[39m (pid=831950, ip=172.22.0.3)
+  At least one of the input arguments for this task could not be computed:
+ray.exceptions.RaySystemError: System error: No module named 'libs'
+traceback: Traceback (most recent call last):
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 1, in <module>
+    from libs import *
+ModuleNotFoundError: No module named 'libs'
+[36m(launch_and_fit pid=831950)[39m No module named 'libs'[32m [repeated 2x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)
+[36m(launch_and_fit pid=831950)[39m Traceback (most recent call last):[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 387, in deserialize_objects[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m     obj = self._deserialize_object(data, metadata, object_ref)[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 268, in _deserialize_object[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m     return self._deserialize_msgpack_data(data, metadata_fields)[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 223, in _deserialize_msgpack_data[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m     python_objects = self._deserialize_pickle5_data(pickle5_data)[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 213, in _deserialize_pickle5_data[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m     obj = pickle.loads(in_band)[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m   File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 1, in <module>[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m     from libs import *[32m [repeated 2x across cluster]
+[36m(launch_and_fit pid=831950)[39m ModuleNotFoundError: No module named 'libs'[32m [repeated 2x across cluster]
+ERROR flwr 2023-08-11 15:24:12,184 | ray_client_proxy.py:87 | [36mray::launch_and_fit()[39m (pid=833034, ip=172.22.0.3)
+  At least one of the input arguments for this task could not be computed:
+ray.exceptions.RaySystemError: System error: No module named 'libs'
+traceback: Traceback (most recent call last):
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 1, in <module>
+    from libs import *
+ModuleNotFoundError: No module named 'libs'
+[36m(launch_and_fit pid=833034)[39m No module named 'libs'
+[36m(launch_and_fit pid=833034)[39m Traceback (most recent call last):
+[36m(launch_and_fit pid=833034)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 387, in deserialize_objects
+[36m(launch_and_fit pid=833034)[39m     obj = self._deserialize_object(data, metadata, object_ref)
+[36m(launch_and_fit pid=833034)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 268, in _deserialize_object
+[36m(launch_and_fit pid=833034)[39m     return self._deserialize_msgpack_data(data, metadata_fields)
+[36m(launch_and_fit pid=833034)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 223, in _deserialize_msgpack_data
+[36m(launch_and_fit pid=833034)[39m     python_objects = self._deserialize_pickle5_data(pickle5_data)
+[36m(launch_and_fit pid=833034)[39m   File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/ray/_private/serialization.py", line 213, in _deserialize_pickle5_data
+[36m(launch_and_fit pid=833034)[39m     obj = pickle.loads(in_band)
+[36m(launch_and_fit pid=833034)[39m   File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/client.py", line 1, in <module>
+[36m(launch_and_fit pid=833034)[39m     from libs import *
+[36m(launch_and_fit pid=833034)[39m ModuleNotFoundError: No module named 'libs'
+Traceback (most recent call last):
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 334, in fit_clients
+    finished_fs, _ = concurrent.futures.wait(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/_base.py", line 305, in wait
+    waiter.event.wait(timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/run.py", line 87, in <module>
+    fl.simulation.start_simulation(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/simulation/app.py", line 197, in start_simulation
+    hist = _fl(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/app.py", line 217, in _fl
+    hist = server.fit(num_rounds=config.num_rounds, timeout=config.round_timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 106, in fit
+    res_fit = self.fit_round(server_round=current_round, timeout=timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 227, in fit_round
+    results, failures = fit_clients(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 334, in fit_clients
+    finished_fs, _ = concurrent.futures.wait(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/_base.py", line 644, in __exit__
+    self.shutdown(wait=True)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/thread.py", line 236, in shutdown
+    t.join()
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 1011, in join
+    self._wait_for_tstate_lock()
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 334, in fit_clients
+    finished_fs, _ = concurrent.futures.wait(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/_base.py", line 305, in wait
+    waiter.event.wait(timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/vinserver_user/21thinh.dd/FedBackdoor/source/federated_learning/run.py", line 87, in <module>
+    fl.simulation.start_simulation(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/simulation/app.py", line 197, in start_simulation
+    hist = _fl(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/app.py", line 217, in _fl
+    hist = server.fit(num_rounds=config.num_rounds, timeout=config.round_timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 106, in fit
+    res_fit = self.fit_round(server_round=current_round, timeout=timeout)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 227, in fit_round
+    results, failures = fit_clients(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/site-packages/flwr/server/server.py", line 334, in fit_clients
+    finished_fs, _ = concurrent.futures.wait(
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/_base.py", line 644, in __exit__
+    self.shutdown(wait=True)
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/concurrent/futures/thread.py", line 236, in shutdown
+    t.join()
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 1011, in join
+    self._wait_for_tstate_lock()
+  File "/home/admin/miniconda3/envs/21thinh.dd/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
